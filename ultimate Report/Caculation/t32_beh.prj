@@ -1,0 +1,3 @@
+verilog work "counter_32_rev.v"
+verilog work "t32.v"
+verilog work "E:/ise/14.7/ISE_DS/ISE//verilog/src/glbl.v"

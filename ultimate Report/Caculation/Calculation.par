@@ -1,0 +1,259 @@
+Release 14.7 par P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+CST509N32::  Thu Dec 24 15:39:38 2015
+
+par -w -intstyle ise -ol high -t 1 Calculation_map.ncd Calculation.ncd
+Calculation.pcf 
+
+
+Constraints file: Calculation.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "Calculation" is an NCD, version 3.2, device xc3s200, package ft256, speed -5
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.39 2013-10-13".
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                        2 out of 8      25%
+   Number of External IOBs                  33 out of 173    19%
+      Number of LOCed IOBs                  28 out of 33     84%
+
+   Number of Slices                       1302 out of 1920   67%
+      Number of SLICEMs                      0 out of 960     0%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 2 secs 
+Finished initial Timing Analysis.  REAL time: 2 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 2 secs 
+Total CPU  time at the beginning of Placer: 2 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:8abd9576) REAL time: 3 secs 
+
+Phase 2.7  Design Feasibility Check
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: LED<6>
+   	 Comp: LED<5>
+   	 Comp: LED<4>
+   	 Comp: LED<3>
+
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: SW<0>
+
+INFO:Place:834 - Only a subset of IOs are locked. Out of 33 IOs, 28 are locked and 5 are not locked. If you would like
+   to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:8abd9576) REAL time: 3 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:8abd9576) REAL time: 3 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+........
+Phase 4.2  Initial Clock and IO Placement (Checksum:3a3d9db6) REAL time: 3 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:3a3d9db6) REAL time: 3 secs 
+
+Phase 6.3  Local Placement Optimization
+.......
+Phase 6.3  Local Placement Optimization (Checksum:aa4071f1) REAL time: 3 secs 
+
+Phase 7.5  Local Placement Optimization
+Phase 7.5  Local Placement Optimization (Checksum:aa4071f1) REAL time: 3 secs 
+
+Phase 8.8  Global Placement
+.................................................................................................
+.............................
+........................................................
+.................................................................
+...........................................................................................................................
+Phase 8.8  Global Placement (Checksum:b1ee9949) REAL time: 12 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:b1ee9949) REAL time: 12 secs 
+
+Phase 10.18  Placement Optimization
+Phase 10.18  Placement Optimization (Checksum:a6061a83) REAL time: 15 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:a6061a83) REAL time: 15 secs 
+
+Total REAL time to Placer completion: 15 secs 
+Total CPU  time to Placer completion: 13 secs 
+Writing design to file Calculation.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 8422 unrouted;      REAL time: 16 secs 
+
+Phase  2  : 8095 unrouted;      REAL time: 16 secs 
+
+Phase  3  : 3944 unrouted;      REAL time: 17 secs 
+
+Phase  4  : 4017 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
+
+Updating file: Calculation.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 40 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 40 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 40 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 41 secs 
+WARNING:Route:455 - CLK Net:button_out<0> may have excessive skew because 
+      0 CLK pins and 33 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_11/m_1hour/count_carry may have excessive skew because 
+      6 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_11/m_1s/clk_1s may have excessive skew because 
+      6 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_11/m_1min/count_carry may have excessive skew because 
+      6 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:XLXI_11/m_1ms/second_m may have excessive skew because 
+      7 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 41 secs 
+Total CPU time to Router completion: 36 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|     clk_50mhz_BUFGP |      BUFGMUX0| No   |  111 |  0.003     |  0.883      |
++---------------------+--------------+------+------+------------+-------------+
+|           M8/clk_1s |      BUFGMUX3| No   |   19 |  0.002     |  0.882      |
++---------------------+--------------+------+------+------------+-------------+
+|       button_out<3> |         Local|      |  144 |  0.740     |  2.900      |
++---------------------+--------------+------+------+------------+-------------+
+|       button_out<0> |         Local|      |   38 |  0.077     |  1.687      |
++---------------------+--------------+------+------+------------+-------------+
+|XLXI_11/m_1hour/coun |              |      |      |            |             |
+|             t_carry |         Local|      |    6 |  0.929     |  1.944      |
++---------------------+--------------+------+------+------------+-------------+
+| XLXI_11/m_1s/clk_1s |         Local|      |    6 |  0.904     |  1.903      |
++---------------------+--------------+------+------+------------+-------------+
+|XLXI_11/m_1min/count |              |      |      |            |             |
+|              _carry |         Local|      |    6 |  0.005     |  1.281      |
++---------------------+--------------+------+------+------------+-------------+
+|XLXI_11/m_1ms/second |              |      |      |            |             |
+|                  _m |         Local|      |    7 |  0.907     |  1.579      |
++---------------------+--------------+------+------+------------+-------------+
+|       button_out<2> |         Local|      |   32 |  0.155     |  2.362      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net but | SETUP       |         N/A|    18.926ns|     N/A|           0
+  ton_out<3>                                | HOLD        |     3.626ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     7.250ns|     N/A|           0
+  _50mhz_BUFGP                              | HOLD        |     0.779ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net M8/ | SETUP       |         N/A|     4.630ns|     N/A|           0
+  clk_1s                                    | HOLD        |     0.814ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net but | SETUP       |         N/A|     2.228ns|     N/A|           0
+  ton_out<0>                                | HOLD        |     0.773ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     5.843ns|     N/A|           0
+  I_11/m_1hour/count_carry                  | HOLD        |     0.108ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     5.200ns|     N/A|           0
+  I_11/m_1s/clk_1s                          | HOLD        |     0.325ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     4.678ns|     N/A|           0
+  I_11/m_1min/count_carry                   | HOLD        |     0.865ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     6.180ns|     N/A|           0
+  I_11/m_1ms/second_m                       | HOLD        |     0.032ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net but | SETUP       |         N/A|     2.414ns|     N/A|           0
+  ton_out<2>                                | HOLD        |     0.635ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 42 secs 
+Total CPU time to PAR completion: 37 secs 
+
+Peak Memory Usage:  255 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 7
+Number of info messages: 2
+
+Writing design to file Calculation.ncd
+
+
+
+PAR done!

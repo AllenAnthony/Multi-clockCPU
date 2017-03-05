@@ -1,0 +1,5 @@
+verilog work "millisecond.v"
+verilog work "count_hour.v"
+verilog work "count_60.v"
+verilog work "clk_1ms.v"
+verilog work "wall_clock.v"

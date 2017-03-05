@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">Anti_jitter.v</arg>&quot; line <arg fmt="%d" index="2">183</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">Anti_jitter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">InputT32.v</arg>&quot; line <arg fmt="%d" index="2">200</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">InputT32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">Seg7_Dev.v</arg>&quot; line <arg fmt="%d" index="2">206</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">Seg7_Dev</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">Multi_8CH32.v</arg>&quot; line <arg fmt="%d" index="2">213</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">Multi_8CH32</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2725" delta="old" >&quot;<arg fmt="%s" index="1">wall_clock.v</arg>&quot; line <arg fmt="%d" index="2">83</arg>: Size mismatch between case item and case selector.
+</msg>
+
+<msg type="warning" file="Xst" num="2725" delta="old" >&quot;<arg fmt="%s" index="1">wall_clock.v</arg>&quot; line <arg fmt="%d" index="2">84</arg>: Size mismatch between case item and case selector.
+</msg>
+
+<msg type="warning" file="Xst" num="2725" delta="old" >&quot;<arg fmt="%s" index="1">wall_clock.v</arg>&quot; line <arg fmt="%d" index="2">85</arg>: Size mismatch between case item and case selector.
+</msg>
+
+<msg type="warning" file="Xst" num="2725" delta="old" >&quot;<arg fmt="%s" index="1">wall_clock.v</arg>&quot; line <arg fmt="%d" index="2">86</arg>: Size mismatch between case item and case selector.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">t_blink</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">adj_push&lt;2&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">t_blinke</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">d_sec</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">clk_1day</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">adjust</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">d_min</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">d_hour</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">overflow</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">zero</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">zero</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">state</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_80</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_21</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">SW_OK&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">Rc_32</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">N0</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">G0</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">d_min</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">d_hour</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">d_min</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wall_clock</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">d_hour</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wall_clock</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M9_1/Rc</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Calculation</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_11/m_1day/count_carry</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Calculation</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_1/XLXI_2/XLXI_33/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_1/XLXI_2/XLXI_33/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_34/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_34/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_34/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_35/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_35/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_35/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_36/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_36/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_36/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_69/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_69/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_69/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_70/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_70/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_70/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_71/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_71/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_71/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_72/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_72/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_3/XLXI_2/XLXI_72/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_33/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_33/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_33/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_34/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_34/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_34/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_35/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_35/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_35/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_36/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_36/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_36/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_69/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_69/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_69/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_70/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_70/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_70/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_71/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_71/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_71/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_72/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_72/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M3/MUX1/XLXI_4/XLXI_2/XLXI_72/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_33/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_33/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_33/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_34/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_34/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_34/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_35/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_35/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_35/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_36/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_36/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_36/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_69/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_69/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_69/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_70/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_70/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_70/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_71/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_71/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_71/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_72/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_72/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_72/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_33/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_33/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_33/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_34/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_34/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_34/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_35/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_35/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_35/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_36/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_36/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_36/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_69/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_69/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_69/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_70/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_70/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_70/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_71/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_71/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_71/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_72/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_72/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_72/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_33/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_33/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_33/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_34/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_34/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_34/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_35/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_35/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_35/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_36/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_36/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_36/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_69/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_69/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_69/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_70/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_70/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_70/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_71/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_71/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_71/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_72/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_72/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_72/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_33/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_33/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_33/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_34/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_34/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_34/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_35/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_35/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_35/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_36/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_36/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_36/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_69/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_69/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_69/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_70/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_70/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_70/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_71/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_71/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_71/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_72/S0</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_72/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_72/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">state_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">M4</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;state_0_1&gt; &lt;state_0_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">state_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">M4</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;state_1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">state_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">M4</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;state_0_1&gt; &lt;state_0_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">state_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">M4</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;state_1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

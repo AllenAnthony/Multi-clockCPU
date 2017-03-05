@@ -1,0 +1,2 @@
+vhdtdtfi -lib work F:/logic/Exp11/Caculation/MUX2T1_32.v -lang verilog -prj Calculation_Exp100 -o MUX2T1_32.spl -module MUX2T1_32 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 MUX2T1_32.spl F:/logic/Exp11/Caculation/MUX2T1_32.sym 

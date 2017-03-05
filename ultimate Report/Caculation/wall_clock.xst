@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/CST/Desktop/Caculation/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/CST/Desktop/Caculation/xst"
+elaborate
+-ifn wall_clock.prj
+-ifmt mixed

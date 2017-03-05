@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/CST/Desktop/Caculation/Shift_32.v -lang verilog -prj Calculation_Exp100 -o Shift_32.spl -module Shift_32 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Shift_32.spl C:/Users/CST/Desktop/Caculation/Shift_32.sym 

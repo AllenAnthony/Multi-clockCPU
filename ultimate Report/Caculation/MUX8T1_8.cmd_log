@@ -1,0 +1,6 @@
+sch2hdl -intstyle ise -family spartan3 -verilog MUX8T1_8_drc.vf -w F:/project_from_ISE/Expr082ALU/MUX8T1_8.sch 
+sch2hdl -intstyle ise -family spartan3 -verilog MUX8T1_8_drc.vf -w F:/project_from_ISE/Expr082ALU/MUX8T1_8.sch 
+sch2sym -intstyle ise -family spartan3 -refsym MUX8T1_8 F:/project_from_ISE/Expr082ALU/MUX8T1_8.sch F:/project_from_ISE/Expr082ALU/MUX8T1_8.sym 
+sch2hdl -intstyle ise -family spartan3 -verilog MUX8T1_8_drc.vf -w F:/project_from_ISE/Expr082ALU/MUX8T1_8.sch 
+sch2sym -intstyle ise -family spartan3 -refsym MUX8T1_8 F:/project_from_ISE/Expr082ALU/MUX8T1_8.sch F:/project_from_ISE/Expr082ALU/MUX8T1_8.sym 
+sch2sym -intstyle ise -family spartan3 -refsym MUX8T1_8 F:/project_from_ISE/Expr082ALU/MUX8T1_8.sch F:/project_from_ISE/Expr082ALU/MUX8T1_8.sym 

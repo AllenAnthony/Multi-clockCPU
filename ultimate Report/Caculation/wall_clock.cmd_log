@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/CST/Desktop/Caculation/wall_clock.v -lang verilog -prj Calculation_Exp100 -o wall_clock.spl -module wall_clock -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 wall_clock.spl C:/Users/CST/Desktop/Caculation/wall_clock.sym 

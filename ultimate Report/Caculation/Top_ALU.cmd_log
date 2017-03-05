@@ -1,0 +1,28 @@
+xst -intstyle ise -ifn "F:/project_from_ISE/Expr082ALU/Top_ALU.xst" -ofn "F:/project_from_ISE/Expr082ALU/Top_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_ALU.ucf -p xc6slx16-csg324-3 Top_ALU.ngc Top_ALU.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_ALU_map.ncd Top_ALU.ngd Top_ALU.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_ALU.ucf -p xc6slx16-csg324-3 Top_ALU.ngc Top_ALU.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_ALU_map.ncd Top_ALU.ngd Top_ALU.pcf 
+par -w -intstyle ise -ol high -mt off Top_ALU_map.ncd Top_ALU.ncd Top_ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Top_ALU.twx Top_ALU.ncd -o Top_ALU.twr Top_ALU.pcf -ucf Top_ALU.ucf 
+bitgen -intstyle ise -f Top_ALU.ut Top_ALU.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_ALU.ucf -p xc6slx16-csg324-3 Top_ALU.ngc Top_ALU.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_ALU_map.ncd Top_ALU.ngd Top_ALU.pcf 
+par -w -intstyle ise -ol high -mt off Top_ALU_map.ncd Top_ALU.ncd Top_ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Top_ALU.twx Top_ALU.ncd -o Top_ALU.twr Top_ALU.pcf -ucf Top_ALU.ucf 
+bitgen -intstyle ise -f Top_ALU.ut Top_ALU.ncd 
+xst -intstyle ise -ifn "E:/Expr082ALU/Top_ALU.xst" -ofn "E:/Expr082ALU/Top_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_ALU.ucf -p xc3s200-ft256-5 Top_ALU.ngc Top_ALU.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o Top_ALU_map.ncd Top_ALU.ngd Top_ALU.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_ALU.ucf -p xc3s200-ft256-5 Top_ALU.ngc Top_ALU.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o Top_ALU_map.ncd Top_ALU.ngd Top_ALU.pcf 
+par -w -intstyle ise -ol high -t 1 Top_ALU_map.ncd Top_ALU.ncd Top_ALU.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Top_ALU.twx Top_ALU.ncd -o Top_ALU.twr Top_ALU.pcf -ucf Top_ALU.ucf 
+bitgen -intstyle ise -f Top_ALU.ut Top_ALU.ncd 
+xst -intstyle ise -ifn "F:/logic/Exp10/ALU/Top_ALU.xst" -ofn "F:/logic/Exp10/ALU/Top_ALU.syr" 
+xst -intstyle ise -ifn "F:/logic/Exp10/ALU/Top_ALU.xst" -ofn "F:/logic/Exp10/ALU/Top_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_ALU.ucf -p xc3s200-ft256-5 Top_ALU.ngc Top_ALU.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o Top_ALU_map.ncd Top_ALU.ngd Top_ALU.pcf 
+par -w -intstyle ise -ol high -t 1 Top_ALU_map.ncd Top_ALU.ncd Top_ALU.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Top_ALU.twx Top_ALU.ncd -o Top_ALU.twr Top_ALU.pcf -ucf Top_ALU.ucf 
+bitgen -intstyle ise -f Top_ALU.ut Top_ALU.ncd 

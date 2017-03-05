@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : LED.vf
+// /___/   /\     Timestamp : 12/06/2015 16:27:50
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog E:/ANG/Exp10/Caculation/LED.vf -w E:/ANG/Exp10/Caculation/LED.sch
+//Design Name: LED
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module LED(EN, 
+           LED_in, 
+           LED_out);
+
+    input EN;
+    input [7:0] LED_in;
+   output [7:0] LED_out;
+   
+   
+   AND2  XLXI_1 (.I0(EN), 
+                .I1(LED_in[7]), 
+                .O(LED_out[7]));
+   AND2  XLXI_2 (.I0(EN), 
+                .I1(LED_in[6]), 
+                .O(LED_out[6]));
+   AND2  XLXI_3 (.I0(EN), 
+                .I1(LED_in[5]), 
+                .O(LED_out[5]));
+   AND2  XLXI_4 (.I0(EN), 
+                .I1(LED_in[4]), 
+                .O(LED_out[4]));
+   AND2  XLXI_5 (.I0(EN), 
+                .I1(LED_in[3]), 
+                .O(LED_out[3]));
+   AND2  XLXI_6 (.I0(EN), 
+                .I1(LED_in[2]), 
+                .O(LED_out[2]));
+   AND2  XLXI_7 (.I0(EN), 
+                .I1(LED_in[1]), 
+                .O(LED_out[1]));
+   AND2  XLXI_8 (.I0(EN), 
+                .I1(LED_in[0]), 
+                .O(LED_out[0]));
+endmodule

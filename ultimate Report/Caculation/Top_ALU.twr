@@ -1,0 +1,122 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml Top_ALU.twx Top_ALU.ncd -o Top_ALU.twr Top_ALU.pcf -ucf
+Top_ALU.ucf
+
+Design file:              Top_ALU.ncd
+Physical constraint file: Top_ALU.pcf
+Device,package,speed:     xc3s200,ft256,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_50mhz
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+BTN<0>      |    5.585(R)|    0.356(R)|clk_50mhz_BUFGP   |   0.000|
+BTN<1>      |    5.109(R)|    0.299(R)|clk_50mhz_BUFGP   |   0.000|
+BTN<2>      |    4.549(R)|    0.358(R)|clk_50mhz_BUFGP   |   0.000|
+BTN<3>      |    5.083(R)|    0.157(R)|clk_50mhz_BUFGP   |   0.000|
+SW<0>       |    5.502(R)|    0.751(R)|clk_50mhz_BUFGP   |   0.000|
+SW<1>       |    5.689(R)|   -0.039(R)|clk_50mhz_BUFGP   |   0.000|
+SW<2>       |    5.614(R)|    0.413(R)|clk_50mhz_BUFGP   |   0.000|
+SW<3>       |    5.877(R)|    0.554(R)|clk_50mhz_BUFGP   |   0.000|
+SW<4>       |    5.823(R)|    0.981(R)|clk_50mhz_BUFGP   |   0.000|
+SW<5>       |    5.918(R)|    1.041(R)|clk_50mhz_BUFGP   |   0.000|
+SW<6>       |    5.541(R)|    1.041(R)|clk_50mhz_BUFGP   |   0.000|
+SW<7>       |    5.446(R)|    0.997(R)|clk_50mhz_BUFGP   |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk_50mhz to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+AN<0>       |   14.094(R)|clk_50mhz_BUFGP   |   0.000|
+AN<1>       |   13.283(R)|clk_50mhz_BUFGP   |   0.000|
+AN<2>       |   12.828(R)|clk_50mhz_BUFGP   |   0.000|
+AN<3>       |   13.407(R)|clk_50mhz_BUFGP   |   0.000|
+LED<0>      |   21.283(R)|clk_50mhz_BUFGP   |   0.000|
+SEGMENT<0>  |   35.848(R)|clk_50mhz_BUFGP   |   0.000|
+SEGMENT<1>  |   36.346(R)|clk_50mhz_BUFGP   |   0.000|
+SEGMENT<2>  |   36.455(R)|clk_50mhz_BUFGP   |   0.000|
+SEGMENT<3>  |   36.360(R)|clk_50mhz_BUFGP   |   0.000|
+SEGMENT<4>  |   36.601(R)|clk_50mhz_BUFGP   |   0.000|
+SEGMENT<5>  |   36.008(R)|clk_50mhz_BUFGP   |   0.000|
+SEGMENT<6>  |   36.281(R)|clk_50mhz_BUFGP   |   0.000|
+SEGMENT<7>  |   17.131(R)|clk_50mhz_BUFGP   |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_50mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_50mhz      |    6.615|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+SW<1>          |LED<7>         |    9.619|
+SW<6>          |SEGMENT<0>     |   16.084|
+SW<6>          |SEGMENT<1>     |   15.964|
+SW<6>          |SEGMENT<2>     |   17.212|
+SW<6>          |SEGMENT<3>     |   17.367|
+SW<6>          |SEGMENT<4>     |   17.368|
+SW<6>          |SEGMENT<5>     |   16.391|
+SW<6>          |SEGMENT<6>     |   17.048|
+SW<7>          |SEGMENT<0>     |   15.882|
+SW<7>          |SEGMENT<1>     |   15.762|
+SW<7>          |SEGMENT<2>     |   17.010|
+SW<7>          |SEGMENT<3>     |   17.165|
+SW<7>          |SEGMENT<4>     |   17.166|
+SW<7>          |SEGMENT<5>     |   16.189|
+SW<7>          |SEGMENT<6>     |   16.846|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Dec 02 19:42:00 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 111 MB
+
+
+

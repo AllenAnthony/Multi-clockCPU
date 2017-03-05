@@ -1,0 +1,1384 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Mapping Report File for Design 'Calculation'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off
+-c 100 -o Calculation_map.ncd Calculation.ngd Calculation.pcf 
+Target Device  : xc3s200
+Target Package : ft256
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Thu Dec 24 15:39:30 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:           620 out of   3,840   16%
+  Number of 4 input LUTs:             1,948 out of   3,840   50%
+Logic Distribution:
+  Number of occupied Slices:          1,302 out of   1,920   67%
+    Number of Slices containing only related logic:   1,302 out of   1,302 100%
+    Number of Slices containing unrelated logic:          0 out of   1,302   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       2,097 out of   3,840   54%
+    Number used as logic:             1,948
+    Number used as a route-thru:        149
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 33 out of     173   19%
+  Number of BUFGMUXs:                     2 out of       8   25%
+
+  Number of RPM macros:          154
+Average Fanout of Non-Clock Nets:                3.39
+
+Peak Memory Usage:  210 MB
+Total REAL time to MAP completion:  5 secs 
+Total CPU time to MAP completion:   4 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network M1/button_pulse<3> has no load.
+INFO:LIT:395 - The above info message is repeated 4 more times for the following
+   (max. 5 shown):
+   M1/button_pulse<2>,
+   M1/button_pulse<1>,
+   M1/button_pulse<0>,
+   M1/SW_OK<0>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 324 block(s) removed
+ 244 block(s) optimized away
+ 324 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "M3/ADD_32/XLXI_1/XLXI_2/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_1/XLXI_2/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_1/XLXI_2/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_1/XLXI_3/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_1/XLXI_3/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_1/XLXI_3/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_1/XLXI_4/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_1/XLXI_4/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_1/XLXI_4/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_1/XLXI_5/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_1/XLXI_5/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_1/XLXI_5/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_2/XLXI_2/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_2/XLXI_2/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_2/XLXI_2/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_2/XLXI_3/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_2/XLXI_3/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_2/XLXI_3/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_2/XLXI_4/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_2/XLXI_4/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_2/XLXI_4/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_2/XLXI_5/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_2/XLXI_5/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_2/XLXI_5/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_3/XLXI_2/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_3/XLXI_2/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_3/XLXI_2/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_3/XLXI_3/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_3/XLXI_3/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_3/XLXI_3/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_3/XLXI_4/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_3/XLXI_4/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_3/XLXI_4/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_3/XLXI_5/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_3/XLXI_5/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_3/XLXI_5/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_4/XLXI_2/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_4/XLXI_2/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_4/XLXI_2/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_4/XLXI_3/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_4/XLXI_3/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_4/XLXI_3/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_4/XLXI_4/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_4/XLXI_4/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_4/XLXI_4/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_4/XLXI_5/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_4/XLXI_5/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_4/XLXI_5/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_5/XLXI_2/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_5/XLXI_2/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_5/XLXI_2/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_5/XLXI_3/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_5/XLXI_3/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_5/XLXI_3/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_5/XLXI_4/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_5/XLXI_4/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_5/XLXI_4/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_5/XLXI_5/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_5/XLXI_5/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_5/XLXI_5/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_6/XLXI_2/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_6/XLXI_2/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_6/XLXI_2/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_6/XLXI_3/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_6/XLXI_3/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_6/XLXI_3/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_6/XLXI_4/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_6/XLXI_4/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_6/XLXI_4/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_6/XLXI_5/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_6/XLXI_5/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_6/XLXI_5/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_7/XLXI_2/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_7/XLXI_2/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_7/XLXI_2/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_7/XLXI_3/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_7/XLXI_3/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_7/XLXI_3/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_7/XLXI_4/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_7/XLXI_4/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_7/XLXI_4/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_7/XLXI_5/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_7/XLXI_5/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_7/XLXI_5/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_8/XLXI_2/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_8/XLXI_2/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_8/XLXI_2/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_8/XLXI_3/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_8/XLXI_3/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_8/XLXI_3/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_8/XLXI_4/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_8/XLXI_4/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_8/XLXI_4/XLXI_5" (AND) removed.
+Loadless block "M3/ADD_32/XLXI_8/XLXI_5/XLXI_4" (OR) removed.
+ The signal "M3/ADD_32/XLXI_8/XLXI_5/XLXN_10" is loadless and has been removed.
+  Loadless block "M3/ADD_32/XLXI_8/XLXI_5/XLXI_5" (AND) removed.
+The signal "M3/MUX1/XLXI_1/XLXI_2/XLXI_33/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_1/XLXI_2/XLXI_34/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_1/XLXI_2/XLXI_35/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_1/XLXI_2/XLXI_36/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_1/XLXI_2/XLXI_69/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_1/XLXI_2/XLXI_70/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_1/XLXI_2/XLXI_71/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_1/XLXI_2/XLXI_72/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_2/XLXI_2/XLXI_33/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_2/XLXI_2/XLXI_34/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_2/XLXI_2/XLXI_35/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_2/XLXI_2/XLXI_36/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_2/XLXI_2/XLXI_69/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_2/XLXI_2/XLXI_70/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_2/XLXI_2/XLXI_71/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_2/XLXI_2/XLXI_72/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_3/XLXI_2/XLXI_33/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_3/XLXI_2/XLXI_34/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_3/XLXI_2/XLXI_35/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_3/XLXI_2/XLXI_36/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_3/XLXI_2/XLXI_69/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_3/XLXI_2/XLXI_70/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_3/XLXI_2/XLXI_71/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_3/XLXI_2/XLXI_72/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_4/XLXI_2/XLXI_33/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_4/XLXI_2/XLXI_34/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_4/XLXI_2/XLXI_35/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_4/XLXI_2/XLXI_36/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_4/XLXI_2/XLXI_69/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_4/XLXI_2/XLXI_70/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_4/XLXI_2/XLXI_71/dummy" is sourceless and has been
+removed.
+The signal "M3/MUX1/XLXI_4/XLXI_2/XLXI_72/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_33/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_34/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_35/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_36/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_69/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_70/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_71/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_72/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_33/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_34/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_35/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_36/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_69/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_70/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_71/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_72/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_33/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_34/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_35/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_36/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_69/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_70/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_71/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_72/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_33/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_34/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_35/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_36/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_69/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_70/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_71/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_72/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_33/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_34/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_35/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_36/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_69/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_70/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_71/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_72/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_33/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_34/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_35/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_36/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_69/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_70/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_71/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_72/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_33/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_34/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_35/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_36/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_69/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_70/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_71/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_72/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_33/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_34/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_35/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_36/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_69/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_70/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_71/dummy" is sourceless and has been
+removed.
+The signal "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_72/dummy" is sourceless and has been
+removed.
+The signal "M1/button_pulse<3>" is sourceless and has been removed.
+The signal "M1/button_pulse<2>" is sourceless and has been removed.
+The signal "M1/button_pulse<1>" is sourceless and has been removed.
+The signal "M1/button_pulse<0>" is sourceless and has been removed.
+The signal "M1/SW_OK<0>" is sourceless and has been removed.
+The signal "M1/pulse" is sourceless and has been removed.
+ Sourceless block "M1/button_pulse_mux0000<3>1" (ROM) removed.
+  The signal "M1/button_pulse_mux0000<3>" is sourceless and has been removed.
+   Sourceless block "M1/button_pulse_3" (FF) removed.
+ Sourceless block "M1/button_pulse_mux0000<2>1" (ROM) removed.
+  The signal "M1/button_pulse_mux0000<2>" is sourceless and has been removed.
+   Sourceless block "M1/button_pulse_2" (FF) removed.
+ Sourceless block "M1/button_pulse_mux0000<1>1" (ROM) removed.
+  The signal "M1/button_pulse_mux0000<1>" is sourceless and has been removed.
+   Sourceless block "M1/button_pulse_1" (FF) removed.
+ Sourceless block "M1/button_pulse_mux0000<0>1" (ROM) removed.
+  The signal "M1/button_pulse_mux0000<0>" is sourceless and has been removed.
+   Sourceless block "M1/button_pulse_0" (FF) removed.
+The signal "M5/M2/MUX8180/XLXN_1023" is sourceless and has been removed.
+ Sourceless block "M5/M2/MUX8180/XLXI_369/I_36_95" (OR) removed.
+  The signal "M5/M2/MUX8180/XLXI_369/S1" is sourceless and has been removed.
+   Sourceless block "M5/M2/MUX8180/XLXI_369/I_36_94" (OR) removed.
+    The signal "M5/M2/MUX8180/XLXI_369/O_DUMMY" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_150" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_151" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_152" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_390" is sourceless and has been removed.
+ Sourceless block "M5/M2/MUX8180/XLXI_369/I_36_112" (OR) removed.
+  The signal "M5/M2/MUX8180/XLXI_369/S0" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_394" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_396" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1024" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1029" is sourceless and has been removed.
+ Sourceless block "M5/M2/MUX8180/XLXI_370/I_36_95" (OR) removed.
+  The signal "M5/M2/MUX8180/XLXI_370/S1" is sourceless and has been removed.
+   Sourceless block "M5/M2/MUX8180/XLXI_370/I_36_94" (OR) removed.
+    The signal "M5/M2/MUX8180/XLXI_370/O_DUMMY" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_444" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_446" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_441" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_450" is sourceless and has been removed.
+ Sourceless block "M5/M2/MUX8180/XLXI_370/I_36_112" (OR) removed.
+  The signal "M5/M2/MUX8180/XLXI_370/S0" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_454" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_456" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1030" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1056" is sourceless and has been removed.
+ Sourceless block "M5/M2/MUX8180/XLXI_371/I_36_95" (OR) removed.
+  The signal "M5/M2/MUX8180/XLXI_371/S1" is sourceless and has been removed.
+   Sourceless block "M5/M2/MUX8180/XLXI_371/I_36_94" (OR) removed.
+    The signal "M5/M2/MUX8180/XLXI_371/O_DUMMY" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1051" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1052" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1058" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1060" is sourceless and has been removed.
+ Sourceless block "M5/M2/MUX8180/XLXI_371/I_36_112" (OR) removed.
+  The signal "M5/M2/MUX8180/XLXI_371/S0" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1053" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1055" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1057" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1073" is sourceless and has been removed.
+ Sourceless block "M5/M2/MUX8180/XLXI_372/I_36_95" (OR) removed.
+  The signal "M5/M2/MUX8180/XLXI_372/S1" is sourceless and has been removed.
+   Sourceless block "M5/M2/MUX8180/XLXI_372/I_36_94" (OR) removed.
+    The signal "M5/M2/MUX8180/XLXI_372/O_DUMMY" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1074" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1080" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1082" is sourceless and has been removed.
+ Sourceless block "M5/M2/MUX8180/XLXI_372/I_36_112" (OR) removed.
+  The signal "M5/M2/MUX8180/XLXI_372/S0" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1075" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1077" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1079" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXN_1078" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1785" is sourceless and has been removed.
+ Sourceless block "M5/M2/MUX8181/XLXI_511/I_36_95" (OR) removed.
+  The signal "M5/M2/MUX8181/XLXI_511/S1" is sourceless and has been removed.
+   Sourceless block "M5/M2/MUX8181/XLXI_511/I_36_94" (OR) removed.
+    The signal "M5/M2/MUX8181/XLXI_511/O_DUMMY" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1748" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1749" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1787" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1789" is sourceless and has been removed.
+ Sourceless block "M5/M2/MUX8181/XLXI_511/I_36_112" (OR) removed.
+  The signal "M5/M2/MUX8181/XLXI_511/S0" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1754" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1756" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1786" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1761" is sourceless and has been removed.
+ Sourceless block "M5/M2/MUX8181/XLXI_512/I_36_95" (OR) removed.
+  The signal "M5/M2/MUX8181/XLXI_512/S1" is sourceless and has been removed.
+   Sourceless block "M5/M2/MUX8181/XLXI_512/I_36_94" (OR) removed.
+    The signal "M5/M2/MUX8181/XLXI_512/O_DUMMY" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1762" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1795" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1796" is sourceless and has been removed.
+ Sourceless block "M5/M2/MUX8181/XLXI_512/I_36_112" (OR) removed.
+  The signal "M5/M2/MUX8181/XLXI_512/S0" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1794" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1793" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1798" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXN_1791" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXI_369/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXI_370/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXI_371/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXI_372/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXI_511/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXI_512/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXI_513/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8180/XLXI_514/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXI_369/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXI_370/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXI_371/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXI_372/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXI_511/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXI_512/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXI_513/dummy" is sourceless and has been removed.
+The signal "M5/M2/MUX8181/XLXI_514/dummy" is sourceless and has been removed.
+The signal "M6/data7<31>" is sourceless and has been removed.
+The signal "M6/data7<30>" is sourceless and has been removed.
+The signal "M6/data7<29>" is sourceless and has been removed.
+The signal "M6/data7<28>" is sourceless and has been removed.
+The signal "M6/data7<27>" is sourceless and has been removed.
+The signal "M6/data7<26>" is sourceless and has been removed.
+The signal "M6/data7<25>" is sourceless and has been removed.
+The signal "M6/data7<24>" is sourceless and has been removed.
+The signal "M6/data7<23>" is sourceless and has been removed.
+The signal "M6/data7<22>" is sourceless and has been removed.
+The signal "M6/data7<21>" is sourceless and has been removed.
+The signal "M6/data7<20>" is sourceless and has been removed.
+The signal "M6/data7<19>" is sourceless and has been removed.
+The signal "M6/data7<18>" is sourceless and has been removed.
+The signal "M6/data7<17>" is sourceless and has been removed.
+The signal "M6/data7<16>" is sourceless and has been removed.
+The signal "M6/data7<15>" is sourceless and has been removed.
+The signal "M6/data7<14>" is sourceless and has been removed.
+The signal "M6/data7<13>" is sourceless and has been removed.
+The signal "M6/data7<12>" is sourceless and has been removed.
+The signal "M6/data7<11>" is sourceless and has been removed.
+The signal "M6/data7<10>" is sourceless and has been removed.
+The signal "M6/data7<9>" is sourceless and has been removed.
+The signal "M6/data7<8>" is sourceless and has been removed.
+The signal "M6/data7<7>" is sourceless and has been removed.
+The signal "M6/data7<6>" is sourceless and has been removed.
+The signal "M6/data7<5>" is sourceless and has been removed.
+The signal "M6/data7<4>" is sourceless and has been removed.
+The signal "M6/data7<3>" is sourceless and has been removed.
+The signal "M6/data7<2>" is sourceless and has been removed.
+The signal "M6/data7<1>" is sourceless and has been removed.
+The signal "M6/data7<0>" is sourceless and has been removed.
+The signal "M6/MUX3_Point/D7" is sourceless and has been removed.
+The signal "M6/MUX3_Point/D5" is sourceless and has been removed.
+The signal "M6/MUX3_Point/D4" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/D7" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/D6" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/D5" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/D4" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/D3" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/D2" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/XLXN_24" is sourceless and has been removed.
+ Sourceless block "M6/MUX2_Blink/XLXI_16" (AND) removed.
+ Sourceless block "M6/MUX2_Blink/XLXI_12" (AND) removed.
+The signal "M6/MUX2_Blink/XLXN_26" is sourceless and has been removed.
+ Sourceless block "M6/MUX2_Blink/XLXI_15" (AND) removed.
+ Sourceless block "M6/MUX2_Blink/XLXI_11" (AND) removed.
+The signal "M6/MUX1_DispData/MUX8183/D6" is sourceless and has been removed.
+The signal "M6/MUX1_DispData/MUX8183/D5" is sourceless and has been removed.
+The signal "M6/MUX1_DispData/MUX8182/D6" is sourceless and has been removed.
+The signal "M6/MUX1_DispData/MUX8182/D5" is sourceless and has been removed.
+The signal "M6/MUX1_DispData/MUX8181/D5" is sourceless and has been removed.
+The signal "M6/MUX1_DispData/MUX8180/D5" is sourceless and has been removed.
+The signal "M6/MUX3_Point/XLXI_514/dummy" is sourceless and has been removed.
+The signal "M6/MUX3_Point/XLXI_513/dummy" is sourceless and has been removed.
+The signal "M6/MUX3_Point/XLXI_512/dummy" is sourceless and has been removed.
+The signal "M6/MUX3_Point/XLXI_511/dummy" is sourceless and has been removed.
+The signal "M6/MUX3_Point/XLXI_372/dummy" is sourceless and has been removed.
+The signal "M6/MUX3_Point/XLXI_371/dummy" is sourceless and has been removed.
+The signal "M6/MUX3_Point/XLXI_370/dummy" is sourceless and has been removed.
+The signal "M6/MUX3_Point/XLXI_369/dummy" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/XLXI_514/dummy" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/XLXI_513/dummy" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/XLXI_512/dummy" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/XLXI_511/dummy" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/XLXI_372/dummy" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/XLXI_371/dummy" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/XLXI_370/dummy" is sourceless and has been removed.
+The signal "M6/MUX2_Blink/XLXI_369/dummy" is sourceless and has been removed.
+The signal "M6/MUX1_DispData/MUX8183/XLXI_514/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8183/XLXI_513/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8183/XLXI_512/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8183/XLXI_511/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8183/XLXI_372/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8183/XLXI_371/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8183/XLXI_370/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8183/XLXI_369/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8182/XLXI_514/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8182/XLXI_513/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8182/XLXI_512/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8182/XLXI_511/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8182/XLXI_372/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8182/XLXI_371/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8182/XLXI_370/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8182/XLXI_369/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8181/XLXI_514/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8181/XLXI_513/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8181/XLXI_512/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8181/XLXI_511/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8181/XLXI_372/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8181/XLXI_371/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8181/XLXI_370/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8181/XLXI_369/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8180/XLXI_514/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8180/XLXI_513/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8180/XLXI_512/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8180/XLXI_511/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8180/XLXI_372/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8180/XLXI_371/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8180/XLXI_370/dummy" is sourceless and has been
+removed.
+The signal "M6/MUX1_DispData/MUX8180/XLXI_369/dummy" is sourceless and has been
+removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "M3/MUX1/XLXI_2/XLXN_13" is unused and has been removed.
+ Unused block "M3/MUX1/XLXI_2/XLXI_1/XLXI_14" (AND) removed.
+The signal "M3/MUX1/XLXI_3/XLXN_13" is unused and has been removed.
+ Unused block "M3/MUX1/XLXI_3/XLXI_1/XLXI_14" (AND) removed.
+The signal "M3/MUX1/XLXI_4/XLXI_1/XLXN_24" is unused and has been removed.
+ Unused block "M3/MUX1/XLXI_4/XLXI_1/XLXI_6" (AND) removed.
+The signal "M3/MUX1/XLXI_4/XLXN_10" is unused and has been removed.
+ Unused block "M3/MUX1/XLXI_4/XLXI_1/XLXI_11" (AND) removed.
+The signal "M3/MUX1/XLXI_4/XLXN_11" is unused and has been removed.
+ Unused block "M3/MUX1/XLXI_4/XLXI_1/XLXI_12" (AND) removed.
+The signal "M3/MUX1/XLXI_4/XLXN_13" is unused and has been removed.
+ Unused block "M3/MUX1/XLXI_4/XLXI_1/XLXI_14" (AND) removed.
+The signal "M3/MUX1/XLXI_4/XLXN_9" is unused and has been removed.
+ Unused block "M3/MUX1/XLXI_4/XLXI_1/XLXI_10" (AND) removed.
+Unused block "M1/SW_OK_0" (FF) removed.
+Unused block "M1/pulse" (SFF) removed.
+Unused block "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_33/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_34/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_35/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_36/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_69/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_70/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_71/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_1/XLXI_2/XLXI_72/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_33/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_34/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_35/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_36/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_69/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_70/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_71/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_2/XLXI_2/XLXI_72/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_33/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_34/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_35/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_36/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_69/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_70/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_71/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_3/XLXI_2/XLXI_72/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_33/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_34/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_35/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_36/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_69/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_70/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_71/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGA/XLXI_4/XLXI_2/XLXI_72/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_33/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_34/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_35/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_36/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_69/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_70/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_71/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_1/XLXI_2/XLXI_72/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_33/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_34/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_35/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_36/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_69/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_70/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_71/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_2/XLXI_2/XLXI_72/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_33/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_34/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_35/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_36/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_69/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_70/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_71/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_3/XLXI_2/XLXI_72/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_33/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_34/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_35/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_36/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_69/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_70/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_71/XST_GND" (ZERO) removed.
+Unused block "M11/MUX_REGB/XLXI_4/XLXI_2/XLXI_72/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_1/XLXI_2/XLXI_33/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_1/XLXI_2/XLXI_34/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_1/XLXI_2/XLXI_35/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_1/XLXI_2/XLXI_36/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_1/XLXI_2/XLXI_69/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_1/XLXI_2/XLXI_70/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_1/XLXI_2/XLXI_71/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_1/XLXI_2/XLXI_72/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_2/XLXI_2/XLXI_33/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_2/XLXI_2/XLXI_34/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_2/XLXI_2/XLXI_35/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_2/XLXI_2/XLXI_36/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_2/XLXI_2/XLXI_69/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_2/XLXI_2/XLXI_70/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_2/XLXI_2/XLXI_71/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_2/XLXI_2/XLXI_72/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_3/XLXI_2/XLXI_33/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_3/XLXI_2/XLXI_34/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_3/XLXI_2/XLXI_35/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_3/XLXI_2/XLXI_36/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_3/XLXI_2/XLXI_69/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_3/XLXI_2/XLXI_70/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_3/XLXI_2/XLXI_71/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_3/XLXI_2/XLXI_72/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_4/XLXI_2/XLXI_33/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_4/XLXI_2/XLXI_34/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_4/XLXI_2/XLXI_35/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_4/XLXI_2/XLXI_36/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_4/XLXI_2/XLXI_69/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_4/XLXI_2/XLXI_70/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_4/XLXI_2/XLXI_71/XST_GND" (ZERO) removed.
+Unused block "M3/MUX1/XLXI_4/XLXI_2/XLXI_72/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8180/XLXI_126" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_127" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_128" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_129" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_151" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_152" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_153" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_154" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_156" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_157" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_158" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_159" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_167" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_168" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_169" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_170" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_172" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_173" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_174" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_175" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_177" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_178" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_179" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_181" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_182" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_183" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_184" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_186" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_369/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8180/XLXI_370/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8180/XLXI_371/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8180/XLXI_372/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8180/XLXI_43" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_44" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_511/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8180/XLXI_512/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8180/XLXI_513/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8180/XLXI_514/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8180/XLXI_7" (AND) removed.
+Unused block "M5/M2/MUX8180/XLXI_8" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_369/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8181/XLXI_370/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8181/XLXI_371/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8181/XLXI_372/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8181/XLXI_479" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_480" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_481" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_482" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_483" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_484" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_485" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_486" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_487" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_488" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_489" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_490" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_491" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_492" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_493" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_494" (AND) removed.
+Unused block "M5/M2/MUX8181/XLXI_511/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8181/XLXI_512/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8181/XLXI_513/XST_GND" (ZERO) removed.
+Unused block "M5/M2/MUX8181/XLXI_514/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8180/XLXI_14" (AND) removed.
+Unused block "M6/MUX1_DispData/MUX8180/XLXI_369/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8180/XLXI_370/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8180/XLXI_371/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8180/XLXI_372/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8180/XLXI_511/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8180/XLXI_512/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8180/XLXI_513/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8180/XLXI_514/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8181/XLXI_14" (AND) removed.
+Unused block "M6/MUX1_DispData/MUX8181/XLXI_369/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8181/XLXI_370/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8181/XLXI_371/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8181/XLXI_372/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8181/XLXI_511/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8181/XLXI_512/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8181/XLXI_513/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8181/XLXI_514/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8182/XLXI_14" (AND) removed.
+Unused block "M6/MUX1_DispData/MUX8182/XLXI_16" (AND) removed.
+Unused block "M6/MUX1_DispData/MUX8182/XLXI_369/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8182/XLXI_370/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8182/XLXI_371/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8182/XLXI_372/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8182/XLXI_511/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8182/XLXI_512/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8182/XLXI_513/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8182/XLXI_514/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8183/XLXI_14" (AND) removed.
+Unused block "M6/MUX1_DispData/MUX8183/XLXI_16" (AND) removed.
+Unused block "M6/MUX1_DispData/MUX8183/XLXI_369/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8183/XLXI_370/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8183/XLXI_371/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8183/XLXI_372/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8183/XLXI_511/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8183/XLXI_512/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8183/XLXI_513/XST_GND" (ZERO) removed.
+Unused block "M6/MUX1_DispData/MUX8183/XLXI_514/XST_GND" (ZERO) removed.
+Unused block "M6/MUX2_Blink/XLXI_14" (AND) removed.
+Unused block "M6/MUX2_Blink/XLXI_17" (AND) removed.
+Unused block "M6/MUX2_Blink/XLXI_355" (AND) removed.
+Unused block "M6/MUX2_Blink/XLXI_356" (AND) removed.
+Unused block "M6/MUX2_Blink/XLXI_369/XST_GND" (ZERO) removed.
+Unused block "M6/MUX2_Blink/XLXI_370/XST_GND" (ZERO) removed.
+Unused block "M6/MUX2_Blink/XLXI_371/XST_GND" (ZERO) removed.
+Unused block "M6/MUX2_Blink/XLXI_372/XST_GND" (ZERO) removed.
+Unused block "M6/MUX2_Blink/XLXI_511/XST_GND" (ZERO) removed.
+Unused block "M6/MUX2_Blink/XLXI_512/XST_GND" (ZERO) removed.
+Unused block "M6/MUX2_Blink/XLXI_513/XST_GND" (ZERO) removed.
+Unused block "M6/MUX2_Blink/XLXI_514/XST_GND" (ZERO) removed.
+Unused block "M6/MUX3_Point/XLXI_14" (AND) removed.
+Unused block "M6/MUX3_Point/XLXI_15" (AND) removed.
+Unused block "M6/MUX3_Point/XLXI_17" (AND) removed.
+Unused block "M6/MUX3_Point/XLXI_369/XST_GND" (ZERO) removed.
+Unused block "M6/MUX3_Point/XLXI_370/XST_GND" (ZERO) removed.
+Unused block "M6/MUX3_Point/XLXI_371/XST_GND" (ZERO) removed.
+Unused block "M6/MUX3_Point/XLXI_372/XST_GND" (ZERO) removed.
+Unused block "M6/MUX3_Point/XLXI_511/XST_GND" (ZERO) removed.
+Unused block "M6/MUX3_Point/XLXI_512/XST_GND" (ZERO) removed.
+Unused block "M6/MUX3_Point/XLXI_513/XST_GND" (ZERO) removed.
+Unused block "M6/MUX3_Point/XLXI_514/XST_GND" (ZERO) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		M1/XST_GND
+VCC 		M1/XST_VCC
+INV 		M11/D/XLXI_2
+INV 		M11/D/XLXI_3
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_12
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_13
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_14
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_16
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_24
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_28
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_29
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_30
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_32
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_40
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_41
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_42
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_44
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_52
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_56
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_57
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_58
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_60
+AND2 		M3/MUX1/XLXI_1/XLXI_2/XLXI_68
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_12
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_13
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_14
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_16
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_24
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_28
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_29
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_30
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_32
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_40
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_41
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_42
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_44
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_52
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_56
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_57
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_58
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_60
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_68
+AND2 		M3/MUX1/XLXI_2/XLXI_2/XLXI_8
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_12
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_13
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_14
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_16
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_24
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_28
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_29
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_30
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_32
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_40
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_41
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_42
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_44
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_52
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_56
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_57
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_58
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_60
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_68
+AND2 		M3/MUX1/XLXI_3/XLXI_2/XLXI_8
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_12
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_13
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_14
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_16
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_20
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_21
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_22
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_24
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_28
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_29
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_30
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_32
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_4
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_40
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_41
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_42
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_44
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_48
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_49
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_5
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_50
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_52
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_56
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_57
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_58
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_6
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_60
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_64
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_65
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_66
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_68
+AND2 		M3/MUX1/XLXI_4/XLXI_2/XLXI_8
+AND2 		M5/M2/MUX8181/XLXI_126
+AND2 		M5/M2/MUX8181/XLXI_152
+AND2 		M5/M2/MUX8181/XLXI_157
+AND2 		M5/M2/MUX8181/XLXI_169
+AND2 		M5/M2/MUX8181/XLXI_174
+AND2 		M5/M2/MUX8181/XLXI_179
+AND2 		M5/M2/MUX8181/XLXI_184
+AND2 		M5/M2/MUX8181/XLXI_7
+VCC 		M5/XLXI_23
+GND 		M5/XLXI_24
+AND2 		M6/MUX1_DispData/MUX8180/XLXI_127
+AND2 		M6/MUX1_DispData/MUX8180/XLXI_157
+AND2 		M6/MUX1_DispData/MUX8180/XLXI_173
+AND2 		M6/MUX1_DispData/MUX8180/XLXI_182
+AND2 		M6/MUX1_DispData/MUX8180/XLXI_484
+AND2 		M6/MUX1_DispData/MUX8180/XLXI_491
+AND2 		M6/MUX1_DispData/MUX8180/XLXI_500
+AND2 		M6/MUX1_DispData/MUX8180/XLXI_507
+AND2 		M6/MUX1_DispData/MUX8181/XLXI_127
+AND2 		M6/MUX1_DispData/MUX8181/XLXI_157
+AND2 		M6/MUX1_DispData/MUX8181/XLXI_173
+AND2 		M6/MUX1_DispData/MUX8181/XLXI_182
+AND2 		M6/MUX1_DispData/MUX8181/XLXI_484
+AND2 		M6/MUX1_DispData/MUX8181/XLXI_491
+AND2 		M6/MUX1_DispData/MUX8181/XLXI_500
+AND2 		M6/MUX1_DispData/MUX8181/XLXI_507
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_127
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_128
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_157
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_158
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_173
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_174
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_182
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_183
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_484
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_485
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_491
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_492
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_500
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_501
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_507
+AND2 		M6/MUX1_DispData/MUX8182/XLXI_508
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_127
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_128
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_157
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_158
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_173
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_174
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_182
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_183
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_484
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_485
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_491
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_492
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_500
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_501
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_507
+AND2 		M6/MUX1_DispData/MUX8183/XLXI_508
+AND2 		M6/MUX2_Blink/XLXI_126
+AND2 		M6/MUX2_Blink/XLXI_127
+AND2 		M6/MUX2_Blink/XLXI_128
+AND2 		M6/MUX2_Blink/XLXI_129
+AND2 		M6/MUX2_Blink/XLXI_153
+AND2 		M6/MUX2_Blink/XLXI_154
+AND2 		M6/MUX2_Blink/XLXI_156
+AND2 		M6/MUX2_Blink/XLXI_157
+AND2 		M6/MUX2_Blink/XLXI_158
+AND2 		M6/MUX2_Blink/XLXI_159
+AND2 		M6/MUX2_Blink/XLXI_169
+AND2 		M6/MUX2_Blink/XLXI_170
+AND2 		M6/MUX2_Blink/XLXI_172
+AND2 		M6/MUX2_Blink/XLXI_173
+AND2 		M6/MUX2_Blink/XLXI_174
+AND2 		M6/MUX2_Blink/XLXI_175
+AND2 		M6/MUX2_Blink/XLXI_178
+AND2 		M6/MUX2_Blink/XLXI_179
+AND2 		M6/MUX2_Blink/XLXI_181
+AND2 		M6/MUX2_Blink/XLXI_182
+AND2 		M6/MUX2_Blink/XLXI_183
+AND2 		M6/MUX2_Blink/XLXI_184
+OR4 		M6/MUX2_Blink/XLXI_369/I_36_112
+OR4 		M6/MUX2_Blink/XLXI_370/I_36_112
+OR4 		M6/MUX2_Blink/XLXI_371/I_36_112
+OR4 		M6/MUX2_Blink/XLXI_372/I_36_112
+AND2 		M6/MUX2_Blink/XLXI_43
+AND2 		M6/MUX2_Blink/XLXI_44
+AND2 		M6/MUX2_Blink/XLXI_481
+AND2 		M6/MUX2_Blink/XLXI_482
+AND2 		M6/MUX2_Blink/XLXI_483
+AND2 		M6/MUX2_Blink/XLXI_484
+AND2 		M6/MUX2_Blink/XLXI_485
+AND2 		M6/MUX2_Blink/XLXI_486
+AND2 		M6/MUX2_Blink/XLXI_488
+AND2 		M6/MUX2_Blink/XLXI_489
+AND2 		M6/MUX2_Blink/XLXI_490
+AND2 		M6/MUX2_Blink/XLXI_491
+AND2 		M6/MUX2_Blink/XLXI_492
+AND2 		M6/MUX2_Blink/XLXI_493
+AND2 		M6/MUX2_Blink/XLXI_497
+AND2 		M6/MUX2_Blink/XLXI_498
+AND2 		M6/MUX2_Blink/XLXI_499
+AND2 		M6/MUX2_Blink/XLXI_500
+AND2 		M6/MUX2_Blink/XLXI_501
+AND2 		M6/MUX2_Blink/XLXI_502
+AND2 		M6/MUX2_Blink/XLXI_504
+AND2 		M6/MUX2_Blink/XLXI_505
+AND2 		M6/MUX2_Blink/XLXI_506
+AND2 		M6/MUX2_Blink/XLXI_507
+AND2 		M6/MUX2_Blink/XLXI_508
+AND2 		M6/MUX2_Blink/XLXI_509
+OR4 		M6/MUX2_Blink/XLXI_511/I_36_112
+OR4 		M6/MUX2_Blink/XLXI_512/I_36_112
+OR4 		M6/MUX2_Blink/XLXI_513/I_36_112
+OR4 		M6/MUX2_Blink/XLXI_514/I_36_112
+AND2 		M6/MUX3_Point/XLXI_126
+AND2 		M6/MUX3_Point/XLXI_127
+AND2 		M6/MUX3_Point/XLXI_129
+AND2 		M6/MUX3_Point/XLXI_156
+AND2 		M6/MUX3_Point/XLXI_157
+AND2 		M6/MUX3_Point/XLXI_159
+AND2 		M6/MUX3_Point/XLXI_172
+AND2 		M6/MUX3_Point/XLXI_173
+AND2 		M6/MUX3_Point/XLXI_175
+AND2 		M6/MUX3_Point/XLXI_181
+AND2 		M6/MUX3_Point/XLXI_182
+AND2 		M6/MUX3_Point/XLXI_184
+AND2 		M6/MUX3_Point/XLXI_483
+AND2 		M6/MUX3_Point/XLXI_484
+AND2 		M6/MUX3_Point/XLXI_485
+AND2 		M6/MUX3_Point/XLXI_486
+AND2 		M6/MUX3_Point/XLXI_490
+AND2 		M6/MUX3_Point/XLXI_491
+AND2 		M6/MUX3_Point/XLXI_492
+AND2 		M6/MUX3_Point/XLXI_493
+AND2 		M6/MUX3_Point/XLXI_499
+AND2 		M6/MUX3_Point/XLXI_500
+AND2 		M6/MUX3_Point/XLXI_501
+AND2 		M6/MUX3_Point/XLXI_502
+AND2 		M6/MUX3_Point/XLXI_506
+AND2 		M6/MUX3_Point/XLXI_507
+AND2 		M6/MUX3_Point/XLXI_508
+AND2 		M6/MUX3_Point/XLXI_509
+OR4 		M6/MUX3_Point/XLXI_511/I_36_112
+OR4 		M6/MUX3_Point/XLXI_512/I_36_112
+OR4 		M6/MUX3_Point/XLXI_513/I_36_112
+OR4 		M6/MUX3_Point/XLXI_514/I_36_112
+AND2 		M7/XLXI_7
+VCC 		XLXI_8
+GND 		XLXI_9
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| AN<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| AN<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| AN<2>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| AN<3>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| BTN<0>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BTN<1>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BTN<2>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BTN<3>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| LED<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED<4>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED<5>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED<6>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED<7>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SEGMENT<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SEGMENT<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SEGMENT<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SEGMENT<3>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SEGMENT<4>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SEGMENT<5>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SEGMENT<6>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SEGMENT<7>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SW<0>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW<1>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW<2>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW<3>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW<4>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW<5>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW<6>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW<7>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| clk_50mhz                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+M11_MUX_REGA/XLXI_1/XLXI_2_XLXI_33_0    
+M11_MUX_REGA/XLXI_1/XLXI_2_XLXI_34_1    
+M11_MUX_REGA/XLXI_1/XLXI_2_XLXI_35_2    
+M11_MUX_REGA/XLXI_1/XLXI_2_XLXI_36_3    
+M11_MUX_REGA/XLXI_1/XLXI_2_XLXI_69_4    
+M11_MUX_REGA/XLXI_1/XLXI_2_XLXI_70_5    
+M11_MUX_REGA/XLXI_1/XLXI_2_XLXI_71_6    
+M11_MUX_REGA/XLXI_1/XLXI_2_XLXI_72_7    
+M11_MUX_REGA/XLXI_2/XLXI_2_XLXI_33_0    
+M11_MUX_REGA/XLXI_2/XLXI_2_XLXI_34_1    
+M11_MUX_REGA/XLXI_2/XLXI_2_XLXI_35_2    
+M11_MUX_REGA/XLXI_2/XLXI_2_XLXI_36_3    
+M11_MUX_REGA/XLXI_2/XLXI_2_XLXI_69_4    
+M11_MUX_REGA/XLXI_2/XLXI_2_XLXI_70_5    
+M11_MUX_REGA/XLXI_2/XLXI_2_XLXI_71_6    
+M11_MUX_REGA/XLXI_2/XLXI_2_XLXI_72_7    
+M11_MUX_REGA/XLXI_3/XLXI_2_XLXI_33_0    
+M11_MUX_REGA/XLXI_3/XLXI_2_XLXI_34_1    
+M11_MUX_REGA/XLXI_3/XLXI_2_XLXI_35_2    
+M11_MUX_REGA/XLXI_3/XLXI_2_XLXI_36_3    
+M11_MUX_REGA/XLXI_3/XLXI_2_XLXI_69_4    
+M11_MUX_REGA/XLXI_3/XLXI_2_XLXI_70_5    
+M11_MUX_REGA/XLXI_3/XLXI_2_XLXI_71_6    
+M11_MUX_REGA/XLXI_3/XLXI_2_XLXI_72_7    
+M11_MUX_REGA/XLXI_4/XLXI_2_XLXI_33_0    
+M11_MUX_REGA/XLXI_4/XLXI_2_XLXI_34_1    
+M11_MUX_REGA/XLXI_4/XLXI_2_XLXI_35_2    
+M11_MUX_REGA/XLXI_4/XLXI_2_XLXI_36_3    
+M11_MUX_REGA/XLXI_4/XLXI_2_XLXI_69_4    
+M11_MUX_REGA/XLXI_4/XLXI_2_XLXI_70_5    
+M11_MUX_REGA/XLXI_4/XLXI_2_XLXI_71_6    
+M11_MUX_REGA/XLXI_4/XLXI_2_XLXI_72_7    
+M11_MUX_REGB/XLXI_1/XLXI_2_XLXI_33_0    
+M11_MUX_REGB/XLXI_1/XLXI_2_XLXI_34_1    
+M11_MUX_REGB/XLXI_1/XLXI_2_XLXI_35_2    
+M11_MUX_REGB/XLXI_1/XLXI_2_XLXI_36_3    
+M11_MUX_REGB/XLXI_1/XLXI_2_XLXI_69_4    
+M11_MUX_REGB/XLXI_1/XLXI_2_XLXI_70_5    
+M11_MUX_REGB/XLXI_1/XLXI_2_XLXI_71_6    
+M11_MUX_REGB/XLXI_1/XLXI_2_XLXI_72_7    
+M11_MUX_REGB/XLXI_2/XLXI_2_XLXI_33_0    
+M11_MUX_REGB/XLXI_2/XLXI_2_XLXI_34_1    
+M11_MUX_REGB/XLXI_2/XLXI_2_XLXI_35_2    
+M11_MUX_REGB/XLXI_2/XLXI_2_XLXI_36_3    
+M11_MUX_REGB/XLXI_2/XLXI_2_XLXI_69_4    
+M11_MUX_REGB/XLXI_2/XLXI_2_XLXI_70_5    
+M11_MUX_REGB/XLXI_2/XLXI_2_XLXI_71_6    
+M11_MUX_REGB/XLXI_2/XLXI_2_XLXI_72_7    
+M11_MUX_REGB/XLXI_3/XLXI_2_XLXI_33_0    
+M11_MUX_REGB/XLXI_3/XLXI_2_XLXI_34_1    
+M11_MUX_REGB/XLXI_3/XLXI_2_XLXI_35_2    
+M11_MUX_REGB/XLXI_3/XLXI_2_XLXI_36_3    
+M11_MUX_REGB/XLXI_3/XLXI_2_XLXI_69_4    
+M11_MUX_REGB/XLXI_3/XLXI_2_XLXI_70_5    
+M11_MUX_REGB/XLXI_3/XLXI_2_XLXI_71_6    
+M11_MUX_REGB/XLXI_3/XLXI_2_XLXI_72_7    
+M11_MUX_REGB/XLXI_4/XLXI_2_XLXI_33_0    
+M11_MUX_REGB/XLXI_4/XLXI_2_XLXI_34_1    
+M11_MUX_REGB/XLXI_4/XLXI_2_XLXI_35_2    
+M11_MUX_REGB/XLXI_4/XLXI_2_XLXI_36_3    
+M11_MUX_REGB/XLXI_4/XLXI_2_XLXI_69_4    
+M11_MUX_REGB/XLXI_4/XLXI_2_XLXI_70_5    
+M11_MUX_REGB/XLXI_4/XLXI_2_XLXI_71_6    
+M11_MUX_REGB/XLXI_4/XLXI_2_XLXI_72_7    
+M3_MUX1/XLXI_1/XLXI_2_XLXI_33_0         
+M3_MUX1/XLXI_1/XLXI_2_XLXI_34_1         
+M3_MUX1/XLXI_1/XLXI_2_XLXI_35_2         
+M3_MUX1/XLXI_1/XLXI_2_XLXI_36_3         
+M3_MUX1/XLXI_1/XLXI_2_XLXI_69_4         
+M3_MUX1/XLXI_1/XLXI_2_XLXI_70_5         
+M3_MUX1/XLXI_1/XLXI_2_XLXI_71_6         
+M3_MUX1/XLXI_1/XLXI_2_XLXI_72_7         
+M3_MUX1/XLXI_2/XLXI_2_XLXI_33_0         
+M3_MUX1/XLXI_2/XLXI_2_XLXI_34_1         
+M3_MUX1/XLXI_2/XLXI_2_XLXI_35_2         
+M3_MUX1/XLXI_2/XLXI_2_XLXI_36_3         
+M3_MUX1/XLXI_2/XLXI_2_XLXI_69_4         
+M3_MUX1/XLXI_2/XLXI_2_XLXI_70_5         
+M3_MUX1/XLXI_2/XLXI_2_XLXI_71_6         
+M3_MUX1/XLXI_2/XLXI_2_XLXI_72_7         
+M3_MUX1/XLXI_3/XLXI_2_XLXI_33_0         
+M3_MUX1/XLXI_3/XLXI_2_XLXI_34_1         
+M3_MUX1/XLXI_3/XLXI_2_XLXI_35_2         
+M3_MUX1/XLXI_3/XLXI_2_XLXI_36_3         
+M3_MUX1/XLXI_3/XLXI_2_XLXI_69_4         
+M3_MUX1/XLXI_3/XLXI_2_XLXI_70_5         
+M3_MUX1/XLXI_3/XLXI_2_XLXI_71_6         
+M3_MUX1/XLXI_3/XLXI_2_XLXI_72_7         
+M3_MUX1/XLXI_4/XLXI_2_XLXI_33_0         
+M3_MUX1/XLXI_4/XLXI_2_XLXI_34_1         
+M3_MUX1/XLXI_4/XLXI_2_XLXI_35_2         
+M3_MUX1/XLXI_4/XLXI_2_XLXI_36_3         
+M3_MUX1/XLXI_4/XLXI_2_XLXI_69_4         
+M3_MUX1/XLXI_4/XLXI_2_XLXI_70_5         
+M3_MUX1/XLXI_4/XLXI_2_XLXI_71_6         
+M3_MUX1/XLXI_4/XLXI_2_XLXI_72_7         
+M5/M2_MUX8180_XLXI_511_4                
+M5/M2_MUX8180_XLXI_512_5                
+M5/M2_MUX8180_XLXI_513_6                
+M5/M2_MUX8180_XLXI_514_7                
+M5/M2_MUX8181_XLXI_369_0                
+M5/M2_MUX8181_XLXI_370_1                
+M5/M2_MUX8181_XLXI_371_2                
+M5/M2_MUX8181_XLXI_372_3                
+M5/M2_MUX8181_XLXI_513_6                
+M5/M2_MUX8181_XLXI_514_7                
+M6/MUX1_DispData/MUX8180_XLXI_369_24    
+M6/MUX1_DispData/MUX8180_XLXI_370_25    
+M6/MUX1_DispData/MUX8180_XLXI_371_26    
+M6/MUX1_DispData/MUX8180_XLXI_372_27    
+M6/MUX1_DispData/MUX8180_XLXI_511_28    
+M6/MUX1_DispData/MUX8180_XLXI_512_29    
+M6/MUX1_DispData/MUX8180_XLXI_513_30    
+M6/MUX1_DispData/MUX8180_XLXI_514_31    
+M6/MUX1_DispData/MUX8181_XLXI_369_24    
+M6/MUX1_DispData/MUX8181_XLXI_370_25    
+M6/MUX1_DispData/MUX8181_XLXI_371_26    
+M6/MUX1_DispData/MUX8181_XLXI_372_27    
+M6/MUX1_DispData/MUX8181_XLXI_511_28    
+M6/MUX1_DispData/MUX8181_XLXI_512_29    
+M6/MUX1_DispData/MUX8181_XLXI_513_30    
+M6/MUX1_DispData/MUX8181_XLXI_514_31    
+M6/MUX1_DispData/MUX8182_XLXI_369_24    
+M6/MUX1_DispData/MUX8182_XLXI_370_25    
+M6/MUX1_DispData/MUX8182_XLXI_371_26    
+M6/MUX1_DispData/MUX8182_XLXI_372_27    
+M6/MUX1_DispData/MUX8182_XLXI_511_28    
+M6/MUX1_DispData/MUX8182_XLXI_512_29    
+M6/MUX1_DispData/MUX8182_XLXI_513_30    
+M6/MUX1_DispData/MUX8182_XLXI_514_31    
+M6/MUX1_DispData/MUX8183_XLXI_369_24    
+M6/MUX1_DispData/MUX8183_XLXI_370_25    
+M6/MUX1_DispData/MUX8183_XLXI_371_26    
+M6/MUX1_DispData/MUX8183_XLXI_372_27    
+M6/MUX1_DispData/MUX8183_XLXI_511_28    
+M6/MUX1_DispData/MUX8183_XLXI_512_29    
+M6/MUX1_DispData/MUX8183_XLXI_513_30    
+M6/MUX1_DispData/MUX8183_XLXI_514_31    
+M6/MUX2_Blink_XLXI_369_32               
+M6/MUX2_Blink_XLXI_370_33               
+M6/MUX2_Blink_XLXI_371_34               
+M6/MUX2_Blink_XLXI_372_35               
+M6/MUX2_Blink_XLXI_511_36               
+M6/MUX2_Blink_XLXI_512_37               
+M6/MUX2_Blink_XLXI_513_38               
+M6/MUX2_Blink_XLXI_514_39               
+M6/MUX3_Point_XLXI_369_32               
+M6/MUX3_Point_XLXI_370_33               
+M6/MUX3_Point_XLXI_371_34               
+M6/MUX3_Point_XLXI_372_35               
+M6/MUX3_Point_XLXI_511_36               
+M6/MUX3_Point_XLXI_512_37               
+M6/MUX3_Point_XLXI_513_38               
+M6/MUX3_Point_XLXI_514_39               
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

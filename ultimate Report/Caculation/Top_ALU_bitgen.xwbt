@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\logic\Exp10\ALU\Top_ALU.ncd
+OUTFILE=F:\logic\Exp10\ALU\Top_ALU.bit
+FAMILY=Spartan3
+PART=xc3s200-5ft256
+WORKINGDIR=F:\logic\Exp10\ALU
+LICENSE=WebPack
+USER_INFO=__0_0_0
